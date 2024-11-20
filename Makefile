@@ -6,7 +6,7 @@
 #    By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/11/12 14:38:55 by cmanuel-          #+#    #+#              #
-#    Updated: 2024/11/18 19:37:24 by cmanuel-         ###   ########.fr        #
+#    Updated: 2024/11/20 22:44:13 by cmanuel-         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,8 +14,6 @@
 NAME = libft.a
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
-LIB = ar rcs
-RM = rm -f
 
 SRC =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c \
@@ -31,7 +29,7 @@ SRC_OBJ = $(SRC:.c=.o)
 all: $(NAME)
 
 $(NAME): $(SRC_OBJ)
-	$(LIB) $(NAME) $(SRC_OBJ)
+	ar rcs $(NAME) $(SRC_OBJ)
 
 clean:
 	rm -f $(SRC_OBJ)
