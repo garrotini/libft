@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:11:10 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 15:12:38 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 22:31:56 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,3 +18,11 @@ int	ft_toupper(int c)
 		c -= 32;
 	return (c);
 }
+
+/* int main()
+{
+	int c = 'c';
+	int n = ft_toupper(c);
+	
+	printf("_%c_ becomes _%c_\n", c, n);
+} */

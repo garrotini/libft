@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:10:52 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 15:11:41 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 21:04:23 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,10 @@ size_t	ft_strlen(const char *s)
 		i++;
 	return (i);
 }
+
+/* int main()
+{
+	char s[] = "12345";
+	
+	printf("%s has size %li\n", s, ft_strlen(s));
+} */

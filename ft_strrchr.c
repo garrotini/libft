@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:11:04 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/18 15:12:34 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 21:29:55 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,3 +27,14 @@ char	*ft_strrchr(const char *s, int c)
 		str = (char *)s;
 	return (str);
 }
+
+/* int main()
+{
+	char s[] = "ababababanana";
+	int c = 'b';
+	
+	char *dst;
+	dst = ft_strrchr(s, c);
+
+	printf("from _%s_\nwe are searching _%c_\nand result is _%s_\n", s, c, dst);
+} */

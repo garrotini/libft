@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 14:19:16 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 18:01:32 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 22:19:54 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,3 +32,13 @@ char	*ft_strtrim(char const *s1, char const *set)
 	ft_strlcpy(s, &s1[start], end - start + 1);
 	return (s);
 }
+
+/* int main()
+{
+	char s[] = "asasastrimtrimsas";
+	char set[] = "as";
+
+	char *dst = ft_strtrim(s, set);
+
+	printf("trimming _%s_\nfrom _%s_\nequals _%s_\n", set, s, dst);
+} */

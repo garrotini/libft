@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:10:49 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 19:11:26 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 21:02:15 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,3 +25,14 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 	}
 	return (ft_strlen(src));
 }
+
+/* int main()
+{
+	char	src[20] = "qwertyuiop";
+	char	dst[20];
+	
+	ft_strlcpy(dst, src, ft_strlen(src) + 1);
+	
+	printf("src:_%s_\n", src);
+	printf("dst:_%s_\n", dst);
+} */

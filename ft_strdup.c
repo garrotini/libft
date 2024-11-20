@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:10:22 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 17:50:42 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 20:59:42 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,3 +21,15 @@ char	*ft_strdup(const char *src)
 		return (NULL);
 	return (ft_memcpy(dup, src, ft_strlen(src)));
 }
+
+/* int main()
+{
+	char	src[] = "qwertyuiop";
+	char	*dst;
+	
+	dst = ft_strdup(src);
+	
+	printf("src:_%s_\n", src);
+	printf("dst:_%s_\n", dst);
+}
+ */

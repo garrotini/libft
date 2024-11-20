@@ -6,7 +6,7 @@
 /*   By: cmanuel- <cmanuel-@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/11/11 13:21:54 by cmanuel-          #+#    #+#             */
-/*   Updated: 2024/11/12 18:09:09 by cmanuel-         ###   ########.fr       */
+/*   Updated: 2024/11/20 22:27:09 by cmanuel-         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,7 +23,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 			return (NULL);
 		return (dst);
 	}
-	s = (char *)(s + start);
+	s = (s + start);
 	if (len > ft_strlen(s))
 		len = ft_strlen(s);
 	dst = ft_calloc(len + 1, sizeof(char));
@@ -32,3 +32,14 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	ft_strlcpy(dst, s, len + 1);
 	return (dst);
 }
+
+/* int main()
+{
+	char s[] = "abcABCabc";
+
+	char *d;
+
+	d = ft_substr(s, 3, 3);
+
+	printf("from _%s_\nresult:_%s_\n", s, d);
+} */
