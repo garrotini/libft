@@ -13,7 +13,7 @@
 
 NAME = libft.a
 CC = cc
-CFLAGS = -Wall -Wextra -Werror
+CFLAGS = -Wall -Werror -Wextra 
 
 SRC =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c \
@@ -23,20 +23,25 @@ SRC =	ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_strlcpy.c ft_strlen.c ft_strmapi.c ft_strncmp.c ft_strnstr.c \
 		ft_strrchr.c ft_strtrim.c ft_substr.c ft_tolower.c ft_toupper.c
 
+BONUS_SRC = ft_lstnew.c ft_lstadd_front.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c ft_lstclear.c ft_lstiter.c ft_lstmap.c
 
 SRC_OBJ = $(SRC:.c=.o)
+BONUS_OBJ = $(BONUS_SRC:.c=.o)
 
 all: $(NAME)
 
 $(NAME): $(SRC_OBJ)
 	ar rcs $(NAME) $(SRC_OBJ)
 
+bonus: $(NAME) $(BONUS_OBJ)
+	ar rcs $(NAME) $(BONUS_OBJ)
+
 clean:
-	rm -f $(SRC_OBJ)
+	rm -f $(SRC_OBJ) $(BONUS_OBJ)
 
 fclean: clean
 	rm -f $(NAME)
 
 re: fclean all
 
-.SILENT:
+.PHONY: all clean fclean re bonus

@@ -15,19 +15,19 @@
 static size_t	count_words(const char *str, char c)
 {
 	size_t	count;
-	int		bool;
+	int		flag;
 
 	count = 0;
-	bool = 0;
+	flag = 0;
 	while (*str)
 	{
-		if (*str != c && !bool)
+		if (*str != c && !flag)
 		{
-			bool = 1;
+			flag = 1;
 			count++;
 		}
 		else if (*str == c)
-			bool = 0;
+			flag = 0;
 		str++;
 	}
 	return (count);
